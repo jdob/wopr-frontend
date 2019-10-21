@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+}
+
+.header {
+  grid-column: 1;
+  text-align: center;
+}
+
+.node-list {
+  grid-column: 1;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.node {
+  border: 2px solid #999999;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.node-name {
+  color: #555555;
+  font-size: 100%;
+}
+
+.node-ip {
+  color: #555555;
+  font-size: 100%;
+}
+
+.pod {
+  background: #eeeeee;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.pod-name {
+
+}
