@@ -9,9 +9,11 @@ class Node extends Component {
             <div className="node">
                 <div className="node-name"><strong>Name:</strong> {this.props.name}</div>
                 <div className="node-ip"><strong>IP:</strong> {this.props.ip}</div>
-                {this.props.pods.map((p, i) =>
-                    <Pod key={i} {...p} />
-                )}
+                <div className="node-pods">
+                    {this.props.pods.map((p, i) =>
+                        <Pod key={i} {...p} />
+                    )}
+                </div>
             </div>
         )
     }

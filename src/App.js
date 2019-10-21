@@ -7,7 +7,7 @@ import NodeList from './NodeList.js'
 class App extends Component {
   render() {
     return (
-      <div className="grid-container">
+      <div className="container">
         <Header />
         <NodeList />
       </div>

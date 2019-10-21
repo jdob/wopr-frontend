@@ -33,7 +33,7 @@ class NodeList extends Component {
         this.loadData()
 
         // Reload on an interval
-        setInterval(this.loadData, 1000)
+        setInterval(this.loadData, 2000)
     }
 
     render() {

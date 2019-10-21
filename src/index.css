@@ -4,21 +4,19 @@ body {
   font-family: sans-serif;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 10px;
+.container {
 }
 
 .header {
-  grid-column: 1;
+  width: 100%;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .node-list {
-  grid-column: 1;
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 10px;
 }
 
@@ -26,26 +24,34 @@ body {
   border: 2px solid #999999;
   border-radius: 5px;
   padding: 5px;
+  margin: 5px;
 }
 
 .node-name {
   color: #555555;
-  font-size: 100%;
 }
 
 .node-ip {
   color: #555555;
-  font-size: 100%;
+}
+
+.node-pods {
+  display: inline-grid;
+  grid-template-columns: auto auto;
 }
 
 .pod {
   background: #eeeeee;
+
   border: 1px solid #aaaaaa;
   border-radius: 5px;
+
   padding: 5px;
   margin: 5px;
+
+  font-size: 80%;
+  text-align: center;
 }
 
 .pod-name {
-
 }
