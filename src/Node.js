@@ -8,6 +8,7 @@ class Node extends Component {
         return(
             <div className="node">
                 <div className="node-name"><strong>Name:</strong> {this.props.name}</div>
+                <div className="node-role"><strong>Role:</strong> {this.props.role}</div>
                 <div className="node-ip"><strong>IP:</strong> {this.props.ip}</div>
                 <div className="node-pods">
                     {this.props.pods.map((p, i) =>

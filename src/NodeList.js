@@ -19,7 +19,8 @@ class NodeList extends Component {
     }
 
     loadData() {
-        let url = this.generateUrl('nodes');
+        let image_filter = '?image=busybox'
+        let url = this.generateUrl('nodes' + image_filter);
 
         fetch(url).then(results => {
             return results.json();
@@ -33,7 +34,7 @@ class NodeList extends Component {
         this.loadData()
 
         // Reload on an interval
-        setInterval(this.loadData, 2000)
+        setInterval(this.loadData, 1000)
     }
 
     render() {

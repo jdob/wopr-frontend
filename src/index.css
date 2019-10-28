@@ -4,13 +4,13 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-}
-
 .header {
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.container {
 }
 
 .node-list {
@@ -31,13 +31,20 @@ body {
   color: #555555;
 }
 
+.node-role {
+  color: #555555;
+}
+
 .node-ip {
   color: #555555;
 }
 
 .node-pods {
+  width: 100%;
   display: inline-grid;
   grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
 }
 
 .pod {
@@ -54,4 +61,16 @@ body {
 }
 
 .pod-name {
+}
+
+.pod-status-running {
+  background: #d4ffc7;
+}
+
+.pod-status-pending {
+  background: #fcf5a2;
+}
+
+.pod-status-succeeded {
+  background: #e0edff;
 }
