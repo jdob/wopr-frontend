@@ -40,11 +40,8 @@ body {
 }
 
 .node-pods {
-  width: 100%;
   display: inline-grid;
   grid-template-columns: auto auto;
-  justify-items: center;
-  align-items: center;
 }
 
 .pod {

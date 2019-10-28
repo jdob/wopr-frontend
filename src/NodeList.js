@@ -19,7 +19,7 @@ class NodeList extends Component {
     }
 
     loadData() {
-        let image_filter = '?image=busybox'
+        let image_filter = ''
         let url = this.generateUrl('nodes' + image_filter);
 
         fetch(url).then(results => {
