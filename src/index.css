@@ -40,8 +40,8 @@ body {
 }
 
 .node-pods {
-  display: inline-grid;
-  grid-template-columns: auto auto;
+  /* display: inline-grid; */
+  /* grid-template-columns: auto auto auto; */
 }
 
 .pod {
@@ -55,6 +55,8 @@ body {
 
   font-size: 80%;
   text-align: center;
+
+  display: inline-block;
 }
 
 .pod img {
