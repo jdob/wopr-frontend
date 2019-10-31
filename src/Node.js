@@ -4,19 +4,42 @@ import Pod from './Pod.js';
 
 class Node extends Component {
 
-    render() {
-        return(
-            <div className="node">
-                <div className="node-name"><strong>Name:</strong> {this.props.name}</div>
-                <div className="node-role"><strong>Role:</strong> {this.props.role}</div>
-                <div className="node-ip"><strong>IP:</strong> {this.props.ip}</div>
-                <div className="node-pods">
-                    {this.props.pods.map((p, i) =>
-                        <Pod key={i} {...p} />
-                    )}
+    constructor(props) {
+        super(props);
+        this.nodeInfo = this.nodeInfo.bind(this);
+    }
+
+    nodeInfo() {
+        if (this.props.name !== 'Unscheduled') {
+            return (
+                <div className="node">
+                    <div className="node-name"><strong>Name:</strong> {this.props.name}</div>
+                    <div className="node-role"><strong>Role:</strong> {this.props.role}</div>
+                    <div className="node-ip"><strong>IP:</strong> {this.props.ip}</div>
+                    <div className="node-pods">
+                        {this.props.pods.map((p, i) =>
+                            <Pod key={i} {...p} />
+                        )}
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
+        else {
+            return (
+                <div className="node">
+                    <div className="node-name">Unscheduled Pods</div>
+                    <div className="node-pods">
+                        {this.props.pods.map((p, i) =>
+                            <Pod key={i} {...p} />
+                        )}
+                    </div>
+                </div>
+            )
+        }
+    }
+
+    render() {
+        return(this.nodeInfo())
     }
 }
 
