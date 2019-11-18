@@ -16,7 +16,11 @@ body {
   padding-left: 20px;
 }
 
-.container {
+.container-light {
+  background: #ffffff;
+}
+.container-dark {
+  background: #333333;
 }
 
 .node-list {
@@ -33,16 +37,25 @@ body {
   margin: 5px;
 }
 
-.node-name {
+.node-name-light {
   color: #555555;
 }
-
-.node-role {
-  color: #555555;
+.node-name-dark {
+  color: #cccccc;
 }
 
-.node-ip {
+.node-role-light {
   color: #555555;
+}
+.node-role-dark {
+  color: #cccccc;
+}
+
+.node-ip-light {
+  color: #555555;
+}
+.node-ip-dark {
+  color: #cccccc;
 }
 
 .node-pods {
@@ -69,17 +82,33 @@ body {
   border: 2px solid #000000;
 }
 
-.pod-name {
+.pod-name-light {
+}
+.pod-name-dark {
 }
 
-.pod-status-running {
+.pod-status-light {
+}
+.pod-status-dark {
+}
+
+.pod-status-running-light {
   background: #d4ffc7;
 }
-
-.pod-status-pending {
-  background: #fcf5a2;
+.pod-status-running-dark {
+  background: #92ff70;
 }
 
-.pod-status-succeeded {
+.pod-status-pending-light {
+  background: #fcf5a2;
+}
+.pod-status-pending-dark {
+  background: #ffd257;
+}
+
+.pod-status-succeeded-light {
   background: #e0edff;
+}
+.pod-status-succeeded-dark {
+  background: #94c1ff;
 }
