@@ -31,8 +31,8 @@ class Node extends Component {
         else {
             return (
                 <div className="node">
-                    <div className="node-name-light">Unscheduled Pods</div>
-                    <div className="node-pods-light">
+                    <div className={"node-name-" + this.mode()}>Unscheduled Pods</div>
+                    <div className="node-pods">
                         {this.props.pods.map((p, i) =>
                             <Pod key={i} {...p} />
                         )}
